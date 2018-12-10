@@ -18,22 +18,22 @@ RUN set -euxo pipefail \
   && pip3 install \
     pipenv==2018.10.13 \
   && mv /tmp/deps/sudoers /etc/sudoers \
-  && groupadd --gid ${V_ENV_GROUP} aarba \
+  && groupadd --gid ${V_ENV_GROUP} pyth \
   && useradd \
           --uid ${V_ENV_USER} \
           --gid ${V_ENV_GROUP} \
           --groups wheel \
-          --home-dir /home/aarba \
+          --home-dir /opt/pyth \
           --shell /bin/bash \
-          --comment "Adrian Arba" \
-          aarba \
-  && mkdir /opt/app \
-  && chown -R aarba. /opt/app \
+          --comment "pyth user" \
+          pyth \
+  && mkdir /opt/pyth/app \
+  && chown -R pyth. /opt/pyth/app \
   && rm -rf /tmp/deps
 
-USER aarba
+USER pyth
 
-VOLUME ["/opt/app"]
+VOLUME ["/opt/pyth/app"]
 
-WORKDIR "/opt/app"
+WORKDIR "/opt/pyth/app"
 

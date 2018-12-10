@@ -4,5 +4,5 @@ RUNNING_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )";
 
 cd ${RUNNING_DIR}
 
-docker build -t python-centos-7-py-36:1.0.0 .
+docker build -t demo-centos-7-py-36:1.0.0 .
 
