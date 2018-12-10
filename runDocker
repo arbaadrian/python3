@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+RUNNING_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )";
+
+docker run \
+  --rm \
+  -it \
+  --name python \
+  -v ${RUNNING_DIR}/app:/opt/app \
+  python-centos-7-py-36:1.0.0 \
+  bash
+

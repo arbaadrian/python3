@@ -1,0 +1,28 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "a1aed69214a91e9e60e53c009fe5eb68b2481424f4c34a6dd014418278cddb43"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "rpm-py-installer": {
+            "hashes": [
+                "sha256:08a9b688370fa8693f849834ddcdfa3825473211a4df8fef33a6eaffcd799dc3"
+            ],
+            "index": "pypi",
+            "version": "==0.8.0"
+        }
+    },
+    "develop": {}
+}
